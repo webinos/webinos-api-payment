@@ -90,7 +90,7 @@
                     $('#findService').bind('click', function() {
 						// Get the selected service from the list 
 						var userSelectedPeer = $('#pzh_pzp_list').val();  
-                        webinos.discovery.findServices(new ServiceType('http://webinos.org/api/payment/demowallet'), {
+                        webinos.discovery.findServices(new ServiceType('http://webinos.org/api/payment/mockwallet'), {
 								onFound: function (service) {
 									if (service.serviceAddress == userSelectedPeer){
 										paymentService = service;   

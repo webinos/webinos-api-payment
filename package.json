@@ -1,25 +1,39 @@
-{ "name": "webinos-api-payment"
-, "publishConfig": { "tag": "alpha" }
-, "description": "Payment API"
-, "keywords": [ "webinos", "payment", "API"]
-, "version": "0.0.1"
-, "homepage": "http://webinos.org/"
-, "author": "Christian Fuhrhop <christian.fuhrhop@fokus.fraunhofer.de>"
-, "repository":
-  { "type": "git"
-  , "url": "http://dev.webinos.org/git/wp4.git"
-  }
-, "bugs":
-  { "email": "webinos-wp4-ml@fokus.fraunhofer.de"
-  , "url": ""
-  }
-, "directories": { "lib": "./lib"
-                 }
-, "main": "./lib/service.js"
-, "dependencies":
-  {
-  }
-, "bundleDependencies":
-  [
-  ]
+{
+  "name": "webinos-api-payment",
+  "publishConfig": {
+    "tag": "alpha"
+  },
+  "description": "Payment API",
+  "keywords": [
+    "webinos",
+    "payment",
+    "API"
+  ],
+  "version": "0.0.1",
+  "homepage": "http://webinos.org/",
+  "author": {
+    "name": "Christian Fuhrhop",
+    "email": "christian.fuhrhop@fokus.fraunhofer.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://dev.webinos.org/git/wp4.git"
+  },
+  "bugs": {
+    "email": "webinos-wp4-ml@fokus.fraunhofer.de"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/service.js",
+  "dependencies": {},
+  "bundleDependencies": [],
+  "readme": "webinos-api-payment\n===================\n\nImplementation based on http://dev.webinos.org/specifications/draft/payment.html",
+  "readmeFilename": "README.md",
+  "_id": "webinos-api-payment@0.0.1",
+  "dist": {
+    "shasum": "cde9dac8df6f8055e4516f8a880413b7007300e8"
+  },
+  "_resolved": "git+https://github.com/webinos/webinos-api-payment#2c51fc52e25edfd533c0aa485878280b8399862f",
+  "_from": "git+https://github.com/webinos/webinos-api-payment"
 }

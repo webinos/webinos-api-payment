@@ -1,7 +1,8 @@
 {
   "name": "payment",
   "params": {
-	"demowallet":{}
+	"demowallet":{},
+	"mockwallet":{}
   }
 }
 
