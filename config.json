@@ -1,5 +1,7 @@
 {
   "name": "payment",
-  "params": {}
+  "params": {
+	"demowallet":{}
+  }
 }
 
