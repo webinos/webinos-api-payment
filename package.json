@@ -27,6 +27,9 @@
   },
   "main": "./lib/service.js",
   "dependencies": {},
+  "devDependencies": {
+    "webinos-jsonrpc2": "*"
+  },
   "bundleDependencies": [],
   "readme": "webinos-api-payment\n===================\n\nImplementation based on http://dev.webinos.org/specifications/draft/payment.html",
   "readmeFilename": "README.md",
