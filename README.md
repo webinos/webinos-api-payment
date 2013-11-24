@@ -2,7 +2,10 @@
 
 **Service Type**: http://webinos.org/api/payment/*
 
-The main concept of payment API is to !TODO!
+The main concept of payment API is to provide the interface with the payment providers on your device. The * in the service type indicates that there can be multiple payment providers (like DT's wallet, google wallet etc). In the current implemetation you can find two implementations.
+
+[mockwallet](https://github.com/webinos/webinos-api-payment/blob/master/lib/payment.mockwallet.js): Accepts all payments
+[demowallet](https://github.com/webinos/webinos-api-payment/blob/master/lib/payment.demowallet.js): Provides the interface with the [demo wallet](https://github.com/webinos-apps/android-demowallet) which you may install on your android device. 
 
 
 ## Installation ##
@@ -58,9 +61,12 @@ Alternatively you can use the webinos dashboard to allow the user choose the pay
 
 ## Methods ##
 
-Once you have a reference to an instance of a service you can use the following methods:
+Once you have a reference to an instance of a service you can use the following method:
 
+### pay (successCallback, errorCallback, challengeCallback,  itemList,  bill,  customerID,  sellerID)
 
+This method sends the given info to the payment provider and waits for a success of error call back.
+                           
 
 ## Links ##
 
