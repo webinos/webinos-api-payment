@@ -20,13 +20,14 @@
 	//Payment Module Functionality
 
 	PaymentModule = function (obj){      
-			this.base = WebinosService;
-			this.base(obj);
+			WebinosService.call(this, obj);
 	};
-	// This is the new way, but the old way (Public object accessible by servicedisco) works as well
-	//_webinos.registerServiceConstructor("http://webinos.org/api/payment", PaymentModule);
-
-	PaymentModule.prototype = new WebinosService;
+	// Inherit all functions from WebinosService
+	PaymentModule.prototype = Object.create(WebinosService.prototype);
+	// The following allows the 'instanceof' to work properly
+	PaymentModule.prototype.constructor = PaymentModule;
+	// Register to the service discovery
+	_webinos.registerServiceConstructor("http://webinos.org/api/payment", PaymentModule);
 
 	/**
 	 * To bind the service.
